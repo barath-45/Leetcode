@@ -1,6 +1,6 @@
 class Solution {
     public String thousandSeparator(int n) {
-       String s=String.valueOf(n);
+      String s=String.valueOf(n);
       StringBuilder sb=new StringBuilder();
       int count=0;
       for(int i=s.length()-1;i>=0;i--){
@@ -11,6 +11,6 @@ class Solution {
         }
       }
       String ans=sb.reverse().toString();
-       return ans;
+      return ans; 
     }
 }

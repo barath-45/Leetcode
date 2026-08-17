@@ -5,11 +5,10 @@ class Solution {
             if(number.charAt(i)==digit){
                 StringBuilder sb=new StringBuilder(number);
                 sb.deleteCharAt(i);
-                String ans=sb.toString();
+                String answer=sb.toString();
 
-                if(res.equals("") || ans.compareTo(res)>0){
-                    res=ans;
-                }
+                if(res.equals("")|| answer.compareTo(res)>0)
+                res=answer;
             }
         }
         return res;
